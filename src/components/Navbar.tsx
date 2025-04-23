@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <BarChart4 className="h-6 w-6 text-primary" />
-          <h1 className="text-xl font-bold text-primary">TaskBoost</h1>
+          <h1 className="text-xl font-bold text-primary">TaskHero</h1>
           <Badge variant="outline" className="ml-2">Rewards Hub</Badge>
         </div>
         

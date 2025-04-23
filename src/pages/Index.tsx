@@ -32,7 +32,7 @@ const Index = () => {
   
   useEffect(() => {
     toast({
-      title: "Welcome to TaskBoost!",
+      title: "Welcome to TaskHero!",
       description: "Complete tasks to earn rewards and get paid with your next salary.",
     });
   }, []);
@@ -72,7 +72,7 @@ const Index = () => {
       <main className="flex-1 container py-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight">Task Rewards Hub</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Task Hero Rewards Hub</h1>
             <p className="text-muted-foreground">Complete tasks, earn rewards, get paid with your salary</p>
           </div>
           <AddTaskModal users={MOCK_USERS} onAddTask={handleAddTask} />
