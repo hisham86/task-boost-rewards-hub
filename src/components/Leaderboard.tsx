@@ -26,8 +26,11 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ users, limit = 5 }) => {
       <CardContent>
         <div className="space-y-4">
           {sortedUsers.map((user, index) => (
-            <div key={user.id} className="flex items-center justify-between p-2 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-              <div className="flex items-center">
+            <div 
+              key={user.id} 
+              className="flex items-center justify-between p-2 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
+            >
+              <div className="flex items-center min-w-0">
                 <div className="flex items-center justify-center h-8 w-8 rounded-full bg-muted-foreground/10 mr-4">
                   <span className="text-sm font-bold">{index + 1}</span>
                 </div>
@@ -35,17 +38,22 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ users, limit = 5 }) => {
                   <AvatarImage src={user.avatar} alt={user.name} />
                   <AvatarFallback>{user.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
-                <div>
-                  <p className="font-medium text-sm">{user.name}</p>
-                  <p className="text-xs text-muted-foreground">{user.department}</p>
+                <div className="flex-grow min-w-0">
+                  <p className="font-medium text-sm truncate">{user.name}</p>
+                  <p className="text-xs text-muted-foreground truncate">{user.department}</p>
                 </div>
               </div>
-              <div className="flex flex-col items-end">
-                <Badge variant="outline" className="bg-reward/10 text-reward border-0 flex items-center">
+              <div className="flex flex-col items-end ml-2">
+                <Badge 
+                  variant="outline" 
+                  className="bg-reward/10 text-reward border-0 flex items-center"
+                >
                   <DollarSign className="h-3 w-3 mr-1" />
                   {user.totalReward}
                 </Badge>
-                <span className="text-xs text-muted-foreground mt-1">{user.completedTasks} tasks</span>
+                <span className="text-xs text-muted-foreground mt-1">
+                  {user.completedTasks} tasks
+                </span>
               </div>
             </div>
           ))}
@@ -56,3 +64,4 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ users, limit = 5 }) => {
 };
 
 export default Leaderboard;
+
