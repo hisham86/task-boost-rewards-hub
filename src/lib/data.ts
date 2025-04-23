@@ -1,3 +1,5 @@
+import { User } from "@/lib/data";
+
 export type TaskStatus = 'open' | 'in-progress' | 'completed';
 
 export interface Task {
@@ -121,7 +123,7 @@ export const MOCK_USERS: User[] = [
   },
   {
     id: "2",
-    name: "Jamie Taylor",
+    name: "Khairul Muzzammil",
     avatar: "/placeholder.svg",
     email: "jamie.taylor@example.com",
     role: "Marketing Specialist",
