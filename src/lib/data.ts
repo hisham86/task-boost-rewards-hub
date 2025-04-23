@@ -143,7 +143,7 @@ export const MOCK_USERS: User[] = [
   },
   {
     id: "4",
-    name: "Morgan Williams",
+    name: "Athel She Tu",
     avatar: "/placeholder.svg",
     email: "morgan.williams@example.com",
     role: "Financial Analyst",
