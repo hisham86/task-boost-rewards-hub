@@ -1,4 +1,3 @@
-
 export type TaskStatus = 'open' | 'in-progress' | 'completed';
 
 export interface Task {
@@ -112,7 +111,7 @@ export const MOCK_TASKS: Task[] = [
 export const MOCK_USERS: User[] = [
   {
     id: "1",
-    name: "Alex Chen",
+    name: "Hisham Mohamad",
     avatar: "/placeholder.svg",
     email: "alex.chen@example.com",
     role: "Senior Developer",
