@@ -131,10 +131,10 @@ export const MOCK_USERS: User[] = [
   },
   {
     id: "3",
-    name: "Sam Rodriguez",
+    name: "Oliver Moorthy",
     avatar: "/placeholder.svg",
     email: "sam.rodriguez@example.com",
-    role: "Product Manager",
+    role: "Tech Advocate",
     department: "Product",
     completedTasks: 10,
     totalReward: 510
