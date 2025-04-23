@@ -73,7 +73,12 @@ const Index = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Task Hero Rewards Hub</h1>
-            <p className="text-muted-foreground">Complete tasks, earn rewards, get paid with your salary</p>
+            <p className="text-muted-foreground">
+              Complete tasks, earn rewards, get paid with your salary.<br />
+              <span className="text-primary font-medium">
+                AI-powered to auto-create new tasks and assign the correct price for each task.
+              </span>
+            </p>
           </div>
           <AddTaskModal users={MOCK_USERS} onAddTask={handleAddTask} />
         </div>
