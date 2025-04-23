@@ -76,7 +76,7 @@ const Index = () => {
             <p className="text-muted-foreground">
               Complete tasks, earn rewards, get paid with your salary.<br />
               <span className="text-primary font-medium">
-                AI-powered to auto-create new tasks and assign the correct price for each task.
+                Empower internal talent: Maximize team potential, ensure privacy, and reward directly.
               </span>
             </p>
           </div>
